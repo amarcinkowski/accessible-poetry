@@ -1,0 +1,47 @@
+@import 'mixin';
+
+#acp_skiplinks {
+	list-style: none;
+	padding: 0; margin: 0;
+	height: 0;
+	
+	li {
+		a {
+			display:block;
+		    width:14em;
+		    min-height:48px;
+		    border-radius:0 0 .3125em .3125em;
+		    background:#eee;
+		    text-align:center;
+		    line-height:3.5em;
+		    margin-left:-7em;
+		    position: fixed;
+		    z-index: 99999;
+		    left:50%;
+		    top:-68px;
+			@include transition(all 1s ease);
+			
+			&:focus {
+				top:15px;
+			    outline:none;
+			    text-decoration:underline;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	
+	&.left {
+		li a {
+			left: 15px;
+			margin-left: auto;
+		}
+	}
+	&.right {
+		li a {
+			right: 15px;
+			margin-left: auto;
+		}
+	}
+}

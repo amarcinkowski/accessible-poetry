@@ -1,0 +1,240 @@
+@import 'mixin';
+@import 'variables';
+
+#acp_toolbarWrap {
+	width: $nav-width;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	border: 0;
+	display: none;
+	z-index: 999999;
+	font-family: 'Arial', sans-serif !important;
+	@include transition( all 400ms ease-out );
+	
+	
+	button.acp_hide_toolbar {
+		border: 0;
+		padding: 0;
+		position: absolute;
+		top: 10%;
+		background-color: $blue !important;
+		background-image: url('../img/universal-access.png');
+		background-repeat: no-repeat;
+		
+		&.middle {
+			top: 50%;
+			@include transform(translateY(-50%));
+		}
+		&.bottom {
+			top: auto;
+			bottom: 10%;
+		}
+		span {
+			position: absolute;
+			display: block;
+			width: 100%;
+			text-align: center;
+			bottom: 5px; top: 39px;
+			line-height: 12px;
+			font-weight: 700;
+			height: 12px;
+			background-color: $blue !important;
+			color: white !important;
+		}
+		
+		&.acp-icon-small {
+			width: 38px; height: 38px;
+			font-size: 9px;
+			background-size: 80%;
+			background-position: center center;
+			overflow: hidden;
+		}
+		&.acp-icon-medium {
+			width: 66px; height: 56px;
+			font-size: 9px;
+			background-position: center 5px;
+		}
+	}
+	
+	&.right {
+		right: 0;
+		
+		&.close-toolbar {
+			right: -$nav-width;
+		}
+		button.acp_hide_toolbar {
+			
+			&.acp-icon-small {
+				left: -38px;
+			}
+			&.acp-icon-medium {
+				left: -66px;
+			}
+		}
+	}
+	&.left {
+		left: 0;
+		
+		&.close-toolbar {
+			left: -$nav-width;
+		}
+		button.acp_hide_toolbar {
+			
+			&.acp-icon-small {
+				right: -38px;
+			}
+			&.acp-icon-medium {
+				right: -66px;
+			}
+		}
+	}
+	
+	.acp-author {
+		position: absolute;
+		bottom: 5px; right: 5px; left: 5px;
+		text-align: center;
+		font-size: 13px;
+		background-color: rgba(0,0,0,0) !important;
+		
+		a {
+			color: #fffacd !important;
+			@include transition( all 250ms ease );
+			background-color: rgba(0,0,0,0) !important;
+			
+			&:hover, &:focus {
+				opacity: 1;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+#acp_toolbar {
+	list-style: none;
+	padding: 0 10px; margin: 0;
+	background: lighten($black, 5%) !important;
+	position: absolute;
+	right: 0; left: 0;
+	top: 0; bottom: 0;
+	
+	h3 {
+		font-size: 18px !important;
+		font-weight: 700;
+		text-align: center;
+		padding: 0 0 10px;
+		margin: 10px 0 0;
+		color: #fffacd !important;
+		background-color: rgba(0,0,0,0) !important;
+	}
+	
+	.acp-font-reset,
+	.acp-contrast-reset {
+		-webkit-appearance: none;
+		background: none;
+		border: 0;
+		padding: 0;
+		text-decoration: underline;
+		text-align: center;
+	}
+	
+	li {
+		display: inline-block;
+		width: 100%;
+		margin: 0; padding: 0;
+		border-bottom: 1px solid lighten($black, 25%);
+		background-color: rgba(0,0,0,0) !important;
+		
+		button {
+			color: white;
+			border: 0;
+			padding: 0 10px;
+			font-size: 13px;
+			display: block;
+			width: 100%;
+			text-align: left;
+			line-height: 2;
+			background-color: rgba(0,0,0,0) !important;
+			-webkit-appearance: none;
+			@include transition(all 250ms ease);
+			
+			&:hover, &:focus {
+				background-color: lighten($black, 15%) !important;
+			}
+			&.acp-hide {
+				display: none;
+			}
+			&.acp-hide, &.acp-contrast-reset, &.acp-font-reset {
+				border-top: 1px solid lighten($black, 25%);
+			}
+		}
+	}
+}
+
+.rtl {
+	#acp_toolbar li button {
+		text-align: right;
+		
+		&.acp-contrast-reset, &.acp-font-reset {
+			text-align: center;
+		}
+	}
+}
+
+// contrast
+
+body.acp-dark {
+	background: $black !important;
+	color: white !important;
+}
+body.acp-bright {
+	background: white !important;
+	color: $black !important;
+}
+
+// bootstrap support
+
+body {
+	&.acp-dark {
+		a {
+			color: $yellow !important;
+		}
+		.panel,
+		.jumbotron,
+		.container .jumbotron,
+		.container-fluid .jumbotron {
+			background-color: rgba(white, 0.1);
+		}
+		
+		.panel-default {
+			border-color: rgba(white, .2);
+		}
+		#acp_toolbar li button.acp-dark-btn {
+			background-color: lighten($black, 15%);
+		}
+	}
+	&.acp-bright {
+		#acp_toolbar li button.acp-bright-btn {
+			background-color: lighten($black, 15%) !important;
+		}
+	}
+	&.acp-focus a:focus {
+		outline: thin dotted;
+	    outline: 5px auto -webkit-focus-ring-color;
+	    outline-offset: -2px;
+	}
+}
+
+
+// grayscale
+
+body.acp-grayscale {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+    filter: gray;
+	-webkit-filter: grayscale(100%);
+	
+	#acp_toolbar li button.acp-grayscale {
+		background-color: lighten($black, 15%);
+	}
+}
