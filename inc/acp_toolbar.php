@@ -1,6 +1,7 @@
 <?php
 // Toolbar output
-function acp_toolbar_scripts_head() {
+function acp_toolbar_ajax() {
+	check_ajax_referer( 'acp-sec-toolbar', 'security' );
 	
 	$toolbar_side = (get_option( 'acp_toolbar_side', false )) ? get_option( 'acp_toolbar_side', false ) : 'left';
 	$icon_position = (get_option( 'acp_toolbar_icon_pos', false )) ? get_option( 'acp_toolbar_icon_pos', false ) : 'top';
@@ -38,15 +39,23 @@ function acp_toolbar_scripts_head() {
 	</ul>
 	<div class="acp-author"><a href="https://wordpress.org/plugins/accessible-poetry/" title="Link to the plugin page" target="_blank" tabindex="-1">Accessible Poetry</a></div>
 </nav>
-<?php
+<?php 
+	die();
 }
-add_action( 'wp_head', 'acp_toolbar_scripts_head', 2);
+add_action( 'wp_ajax_acp_toolbar_ajax', 'acp_toolbar_ajax' );
+add_action( 'wp_ajax_nopriv_acp_toolbar_ajax', 'acp_toolbar_ajax' );
 
 // toolbar essets
 function acp_toolbar_style() {
 	wp_register_style( 'acp_toolbar', plugins_url( 'accessible-poetry/css/toolbar.css' ) );
 	wp_enqueue_style( 'acp_toolbar' );
-	wp_enqueue_script( 'skiplinks', plugins_url( 'accessible-poetry/inc/js/toolbar.js' ), array('jquery'), '1.0.0', true );
+	
+	wp_enqueue_script( 'toolbar', plugins_url( 'accessible-poetry/inc/js/toolbar.js' ), array('jquery'), '1.0.0', true );
+	wp_localize_script( 'toolbar', 'acptAjax', array(
+		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'security' => wp_create_nonce( 'acp-sec-toolbar' )
+	));
+  
 	wp_enqueue_script( 'grayscale', plugins_url( 'accessible-poetry/inc/js/grayscale.js' ), array('jquery'), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'acp_toolbar_style' );

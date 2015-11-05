@@ -32,6 +32,14 @@ jQuery(window).scroll(function(e) {
 
 jQuery(document).ready(function($){
 	
+	var data = {
+		action: 'acp_toolbar_ajax',
+	    security : acptAjax.security,
+	};
+	$.post(acptAjax.ajaxurl, data, function(response) {
+		$("body").prepend(response);
+	});
+	
 	/**
 	 * Keyboard navigation
 	 **/
@@ -198,6 +206,4 @@ jQuery(document).ready(function($){
 	}, function() {
 		$('a').css('text-decoration', 'none');
 	});
-	
-	$("#acp_toolbarWrap").show(2000);
 });

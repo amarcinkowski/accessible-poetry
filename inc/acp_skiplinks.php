@@ -13,8 +13,8 @@ function acp_register_skiplinks_menu() {
 }
 
 // Skiplinks output
-function acp_skiplinks_after_body() {
-	
+function acp_skiplinks_output() {
+	check_ajax_referer( 'acp-sec-skiplinks', 'security' );
 	$hp_skiplinks = get_option( 'acp_skiplinks_home', false );
 	
 	if( $hp_skiplinks ) {
@@ -40,21 +40,28 @@ function acp_skiplinks_after_body() {
     } else {
 		$menu_list = '<ul><li>Menu "' . $menu_name . '" not defined.</li></ul>';
     }
-    
-    echo $menu_list;
+    if( get_option( 'acp_skiplinks', false ) ) {
+    	echo $menu_list;
+    }
+    die();
 }
+add_action( 'wp_ajax_acp_skiplinks_output', 'acp_skiplinks_output' );
+add_action( 'wp_ajax_nopriv_acp_skiplinks_output', 'acp_skiplinks_output' );
 
 // skiplinks essets
 function acp_skiplinks_essets() {
 	wp_register_style( 'skiplinks', plugins_url( 'accessible-poetry/css/skiplinks.css' ) );
 	wp_enqueue_style( 'skiplinks' );
-	wp_enqueue_script( 'skiplinks', plugins_url( 'accessible-poetry/inc/js/skiplinks.js' ), array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'skiplinks-js', plugins_url( 'accessible-poetry/inc/js/skiplinks.js' ), array('jquery'), '1.0.0', true );
+	wp_localize_script( 'skiplinks-js', 'acpsAjax', array(
+		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'security' => wp_create_nonce( 'acp-sec-skiplinks' )
+	));
 }
 
 // skiplinks registration
 if( get_option( 'acp_skiplinks', false ) ) {
 	add_action( 'wp_enqueue_scripts', 'acp_skiplinks_essets' );
 	add_action( 'after_setup_theme', 'acp_register_skiplinks_menu' );
-	add_action( 'wp_head', 'acp_skiplinks_after_body', 1);
 }
 

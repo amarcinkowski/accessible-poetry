@@ -62,4 +62,6 @@ Enriches your WordPress with better accessibility options such as nicely Skiplin
 * add option to use attachment description in images ALT who don't have an alt.
 * changing toolbar tabindex when it's close or open.
 * improving skiplinks script.
+* improve toolbar as ajax
+* improve skiplinks as ajax
 
