@@ -50,12 +50,12 @@ function acp_toolbar_style() {
 	wp_register_style( 'acp_toolbar', plugins_url( 'accessible-poetry/css/toolbar.css' ) );
 	wp_enqueue_style( 'acp_toolbar' );
 	
-	wp_enqueue_script( 'toolbar', plugins_url( 'accessible-poetry/inc/js/toolbar.js' ), array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'toolbar', plugins_url( 'accessible-poetry/inc/js/toolbar.js' ), array('jquery'), false, true );
 	wp_localize_script( 'toolbar', 'acptAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'security' => wp_create_nonce( 'acp-sec-toolbar' )
 	));
   
-	wp_enqueue_script( 'grayscale', plugins_url( 'accessible-poetry/inc/js/grayscale.js' ), array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'grayscale', plugins_url( 'accessible-poetry/inc/js/grayscale.js' ), array('jquery'), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'acp_toolbar_style' );

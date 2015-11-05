@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2015-10-31 16:34+0200\n"
-"PO-Revision-Date: 2015-10-31 16:44+0200\n"
+"POT-Creation-Date: 2015-11-05 02:50+0200\n"
+"PO-Revision-Date: 2015-11-05 03:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: he_IL\n"
@@ -15,19 +15,19 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: inc/acp_panel.php:68 inc/acp_panel.php:69
+#: inc/acp_panel.php:70 inc/acp_panel.php:71
 msgid "Accessible Poetry"
 msgstr ""
 
-#: inc/acp_panel.php:86
+#: inc/acp_panel.php:88
 msgid "Welcome to Accessible Poetry!"
-msgstr "ברוכים הבאים ל-Accessible Poetry"
+msgstr "ברוכים הבאים ל-accessible Poetry"
 
-#: inc/acp_panel.php:87
+#: inc/acp_panel.php:89
 msgid "Version"
 msgstr "גרסה"
 
-#: inc/acp_panel.php:88
+#: inc/acp_panel.php:90
 msgid ""
 "Here you will find options to perform a better accessibility WordPress "
 "website."
@@ -35,179 +35,187 @@ msgstr ""
 "תוסף זה מעניק מבחר אפשרויות לשיפור נגישות אתר האינטרנט. התוסף אינו מהווה "
 "תחליף להנגשת אתר כחלק מהחוק הנגישות בישראל, אך פותר חלק נכבד מהמתבקש."
 
-#: inc/acp_panel.php:89
+#: inc/acp_panel.php:91
 msgid "This plugin is provided by"
 msgstr "תוסף זה מופעל ע״י"
 
-#: inc/acp_panel.php:89
+#: inc/acp_panel.php:91
 msgid "Amit Moreno"
 msgstr "עמית מורנו"
 
-#: inc/acp_panel.php:89
+#: inc/acp_panel.php:91
 msgid "Please visit our"
 msgstr "בקר/י ב"
 
-#: inc/acp_panel.php:89
+#: inc/acp_panel.php:91
 msgid "Go to our Plugin Page"
 msgstr "עבור לעמוד התוסף"
 
-#: inc/acp_panel.php:89
+#: inc/acp_panel.php:91
 msgid "Plugin Page"
 msgstr "עמוד התוסף"
 
-#: inc/acp_panel.php:89
+#: inc/acp_panel.php:91
 msgid "and "
 msgstr "ו"
 
-#: inc/acp_panel.php:89
+#: inc/acp_panel.php:91
 msgid "Rate Us on our Plugin Page"
-msgstr "דרג את התוסף"
+msgstr "דרגו את התוסף"
 
-#: inc/acp_panel.php:89
+#: inc/acp_panel.php:91
 msgid "Rate Us"
-msgstr "הוסף את הדירוג שלך"
+msgstr "דרג/י את התוסף"
 
-#: inc/acp_panel.php:98
+#: inc/acp_panel.php:100
 msgid "General"
 msgstr "כללי"
 
-#: inc/acp_panel.php:102
+#: inc/acp_panel.php:104
 msgid "Add language attribute to the html tag."
-msgstr "הוספת תכונת השפה לתגית html."
+msgstr "הוספת תכונת השפה לתגית html"
 
-#: inc/acp_panel.php:109
+#: inc/acp_panel.php:111
 msgid "Toolbar"
 msgstr "סרגל נגישות"
 
-#: inc/acp_panel.php:112
+#: inc/acp_panel.php:114
 msgid "Toolbar Side"
 msgstr "צד סרגל הנגישות"
 
-#: inc/acp_panel.php:114 inc/acp_panel.php:234
+#: inc/acp_panel.php:116 inc/acp_panel.php:244
 msgid "Left"
 msgstr "שמאל"
 
-#: inc/acp_panel.php:115 inc/acp_panel.php:235
+#: inc/acp_panel.php:117 inc/acp_panel.php:245
 msgid "Right"
 msgstr "ימין"
 
-#: inc/acp_panel.php:119
+#: inc/acp_panel.php:121
 msgid "Icon position"
 msgstr "מיקום האייקון"
 
-#: inc/acp_panel.php:127
+#: inc/acp_panel.php:129
 msgid "Icon size (default is medium)"
 msgstr "גודל האייקון"
 
-#: inc/acp_panel.php:129
+#: inc/acp_panel.php:131
 msgid "Small"
 msgstr "מוקטן"
 
-#: inc/acp_panel.php:130
+#: inc/acp_panel.php:132
 msgid "Medium"
-msgstr "מלא"
+msgstr "רגיל"
 
-#: inc/acp_panel.php:135
+#: inc/acp_panel.php:137
 msgid "Contrast"
 msgstr "ניגודיות"
 
-#: inc/acp_panel.php:138
+#: inc/acp_panel.php:140
 msgid ""
 "Affect additional elements with the contrast (separate elements with comma)"
 msgstr ""
 "הוספת אלמנטים שעליהם תשפיע הניגודיות, ניתן להוסיף תגיות html, קלאסים ו-ID‪’‬s "
-"של אלמנטים (נא להפריד אלמנטים באמצעות פסיק)."
+"של אלמנטים (נא להפריד אלמנטים באמצעות פסיק)"
 
-#: inc/acp_panel.php:141
+#: inc/acp_panel.php:143
 msgid "Bright Contrast"
 msgstr "ניגודיות בהירה"
 
-#: inc/acp_panel.php:144
+#: inc/acp_panel.php:146
 msgid "Don't use any style for the Bright option."
-msgstr "אל תשתמש בהגדרות עיצוב עבור ניגודיות בהירה."
+msgstr "אל תשתמש בהגדרות עיצוב עבור ניגודיות בהירה"
 
-#: inc/acp_panel.php:148
+#: inc/acp_panel.php:150
+msgid "Affect on all the elements in Bright contrast mode."
+msgstr "השפע על כל האלמנטים שבאתר במצב ניגודיות בהירה"
+
+#: inc/acp_panel.php:154
 msgid "Use custom colors for the Bright option."
-msgstr "השתמש בצבעים מותאמים אישית עבור הניגודיות הבהירה."
+msgstr "השתמש בצבעים מותאמים אישית עבור הניגודיות הבהירה"
 
-#: inc/acp_panel.php:153
+#: inc/acp_panel.php:159
 msgid "Custom Color for the Background of the Bright option."
-msgstr "צבע רקע מותאם  עבור ניגודיות בהירה."
+msgstr "צבע רקע מותאם עבור ניגודיות בהירה"
 
-#: inc/acp_panel.php:157
+#: inc/acp_panel.php:163
 msgid "Custom Color for the Text of the Bright option."
-msgstr "צבע טקסט מותאם אישית עבור ניגודיות בהירה."
+msgstr "צבע טקסט מותאם עבור ניגודיות בהירה"
 
-#: inc/acp_panel.php:161
+#: inc/acp_panel.php:167
 msgid "Custom Color for the Link of the Bright option."
-msgstr "צבע קישור מותאם אישית עבור ניגודיות בהירה."
+msgstr "צבע קישור מותאם אישית עבור ניגודיות בהירה"
 
-#: inc/acp_panel.php:165
+#: inc/acp_panel.php:171
 msgid "Custom Color for the Link of the Bright option in hover & focus modes."
-msgstr "צבע קישור מותאם אישית בעת מעבר הסמן ובמצב פוקוס עבור ניגודיות בהירה."
+msgstr "צבע קישור מותאם אישית בעת מעבר הסמן ובמצב פוקוס עבור ניגודיות כהה"
 
-#: inc/acp_panel.php:170
+#: inc/acp_panel.php:176
 msgid "Dark Contrast"
 msgstr "ניגודיות כהה"
 
-#: inc/acp_panel.php:173
+#: inc/acp_panel.php:179
 msgid "Don't use any style for the Dark option."
-msgstr "אל תשתמש בהגדרות עיצוב עבור ניגודיות כהה."
+msgstr "אל תשתמש בהגדרות עיצוב עבור ניגודיות כהה"
 
-#: inc/acp_panel.php:177
+#: inc/acp_panel.php:183
+msgid "Affect on all the elements in Dark contrast mode."
+msgstr "השפע על כל האלמנטים שבאתר במצב ניגודיות כהה"
+
+#: inc/acp_panel.php:187
 msgid "Use custom colors for the Dark option."
-msgstr "השתמש בצבעים מותאמים אישית עבור הניגודיות הכהה."
+msgstr "השתמש בצבעים מותאמים אישית עבור הניגודיות הכהה"
 
-#: inc/acp_panel.php:182
+#: inc/acp_panel.php:192
 msgid "Custom Color for the Background in the Dark option."
-msgstr "צבע רקע מותאם  עבור ניגודיות כהה."
+msgstr "צבע רקע מותאם עבור ניגודיות כהה"
 
-#: inc/acp_panel.php:186
+#: inc/acp_panel.php:196
 msgid "Custom Color for the Text in the Dark option."
-msgstr "צבע טקסט מותאם אישית עבור ניגודיות כהה."
-
-#: inc/acp_panel.php:190
-msgid "Custom Color for the Link of the Dark option."
-msgstr "צבע קישור מותאם אישית עבור ניגודיות כהה."
-
-#: inc/acp_panel.php:194
-msgid "Custom Color for the Link of the Dark option in hover & focus modes."
-msgstr "צבע קישור מותאם אישית בעת מעבר הסמן ובמצב פוקוס עבור ניגודיות כהה."
+msgstr "צבע טקסט מותאם עבור ניגודיות כהה"
 
 #: inc/acp_panel.php:200
+msgid "Custom Color for the Link of the Dark option."
+msgstr "צבע קישור מותאם עבור ניגודיות כהה"
+
+#: inc/acp_panel.php:204
+msgid "Custom Color for the Link of the Dark option in hover & focus modes."
+msgstr "צבע קישור מותאם אישית בעת מעבר הסמן ובמצב פוקוס עבור ניגודיות בהירה"
+
+#: inc/acp_panel.php:210
 msgid "Font Sizer"
-msgstr "משנה גודל הגופן"
+msgstr "משנה גודל גופן"
 
-#: inc/acp_panel.php:203
+#: inc/acp_panel.php:213
 msgid "Set the change of the font sizers in pixels."
-msgstr "הגדרת גודל הקפיצה בפיקסלים בעת הקטנה או הגדלה של גודל הגופן."
+msgstr "הגדרת גודל הקפיצה בפיקסלים בעת הקטנה או הגדלה של גודל הגופן"
 
-#: inc/acp_panel.php:208
+#: inc/acp_panel.php:218
 msgid "Use custom tags, classes & id's with the Font sizer."
-msgstr "השפע על תגיות, קלאסים ו-ID‪’‬s מותאמים אישית."
+msgstr "השפע על תגיות, קלאסים ו-ID‪’‬s מותאמים אישית"
 
-#: inc/acp_panel.php:211
+#: inc/acp_panel.php:221
 msgid ""
 "Write your custom tags, classes & id's for the Font sizer. separate items "
 "with a comma."
 msgstr ""
 "כאן ניתן להוסיף תגיות, קלאסים ו-ID‪’‬s מותאמים אישית עבור משנה גודל הגופן. יש "
-"להפריד בין הפריטים באמצעות פסיק."
+"להפריד בין הפריטים באמצעות פסיק"
 
-#: inc/acp_panel.php:219 inc/acp_skiplinks.php:11
+#: inc/acp_panel.php:229 inc/acp_skiplinks.php:6
 msgid "Skiplinks"
-msgstr "קישורי דילוג"
+msgstr "קישורי דילוג (Skiplinks)"
 
-#: inc/acp_panel.php:221
+#: inc/acp_panel.php:231
 msgid ""
 "Skiplinks are links which aid navigation around the current page. the user "
 "who navigate with skiplinks do it with the Tab button."
 msgstr ""
 "קישורי דילוג מאפשרים לאדם המנווט באמצעות המקלדת לדלג למקומות מרכזיים בעמוד, "
 "כמו התפריט הראשי, התוכן הראשי וכד׳. הגולש מגיע אל קישורי הניווט באמצעות "
-"הלחצן Tab."
+"הלחצן Tab"
 
-#: inc/acp_panel.php:222
+#: inc/acp_panel.php:232
 msgid ""
 "Before you activate the skiplinks, you should check if your theme has "
 "already got Skiplinks (you can check it by pressing the Tab button when you "
@@ -218,11 +226,11 @@ msgstr ""
 "דילוג בעצמה. ניתן לעשות באמצעות מספר לחיצות על לחצן ה-Tab בעת נחיתה באחד "
 "העמודים, קישורים הדילוג אמורים להופיע בלחיצות הראשונות על מקש זה."
 
-#: inc/acp_panel.php:225
+#: inc/acp_panel.php:235
 msgid "Enable Skiplinks"
 msgstr "הפעלת קישורי דילוג"
 
-#: inc/acp_panel.php:229
+#: inc/acp_panel.php:239
 msgid ""
 "After activating this option a new menu will be registered with your built-"
 "in \"Menus\" of WP. You then will need to create custom menu and add to it "
@@ -236,119 +244,135 @@ msgstr ""
 "דילוג לתפריט הראשי, עליך לבדוק את ה-id של התפריט הראשי ולהוסיף אותו כקישור "
 "מותאם אישית לתפריט קישורי הדילוג עם הסימן ‪#‬ בהתחלה."
 
-#: inc/acp_panel.php:231
+#: inc/acp_panel.php:241
 msgid "Skiplinks Side"
 msgstr "מיקום קישורי הדילוג"
 
-#: inc/acp_panel.php:233
+#: inc/acp_panel.php:243
 msgid "Center (default)"
-msgstr "מרכז (ברירת מחדל)"
+msgstr "מרכז"
 
-#: inc/acp_panel.php:240
+#: inc/acp_panel.php:250
 msgid "Use different links for Home page"
 msgstr "השתמש בקישורי דילוג ייחודיים עבור דף הבית"
 
-#: inc/acp_panel.php:241
+#: inc/acp_panel.php:251
 msgid ""
 "This option will add another menu to your built-in WP Menus there you should "
 "set the permalinks for your Home page."
 msgstr ""
-"אפשרות זו מוסיפה תפריט קישורים נוסף עבור קישורי הדילוג שיופיעו בדף הבית."
+"אפשרות זו מוסיפה תפריט קישורים נוסף עבור קישורי הדילוג שיופיעו בדף הבית"
 
-#: inc/acp_panel.php:245
+#: inc/acp_panel.php:255
 msgid "Use your own style for the skiplinks"
 msgstr "השתמש בהגדרות עיצוב מותאמות אישית עבור קישורי הדילוג"
 
-#: inc/acp_panel.php:248
+#: inc/acp_panel.php:258
 msgid "Background color"
 msgstr "צבע הרקע"
 
-#: inc/acp_panel.php:252
+#: inc/acp_panel.php:262
 msgid "Link color"
 msgstr "צבע הקישור"
 
-#: inc/acp_panel.php:257
+#: inc/acp_panel.php:267
 msgid "Disable link underline"
 msgstr "ביטול הקו התחתון מתחת לקישור"
 
-#: inc/acp_panel.php:266
+#: inc/acp_panel.php:276
 msgid "Links"
 msgstr "קישורים"
 
-#: inc/acp_panel.php:270
+#: inc/acp_panel.php:280
 msgid "Add role=\"link\" to all the &lt;a&gt; tag."
-msgstr "הוספת role‪=‬link לכל תגיות הקישורים."
+msgstr "הוספת role‪=‬link לכל תגיות הקישורים"
 
-#: inc/acp_panel.php:274
+#: inc/acp_panel.php:284
 msgid ""
 "Force Open links in current tab (Remove the \"target\" attribute from all "
 "links)."
-msgstr "מניעת פתיחה של קישורים בכרטיסיה חדשה."
+msgstr "מניעת פתיחה של קישורים בכרטיסיה חדשה"
 
-#: inc/acp_panel.php:278
+#: inc/acp_panel.php:288
 msgid "Change all title attributes on links to aria-label."
-msgstr "שינוי התכונה title ל-aria‪-‬label עבור כל הקישורים."
+msgstr "שינוי התכונה title ל-aria‪-‬label עבור כל הקישורים"
 
-#: inc/acp_panel.php:282
+#: inc/acp_panel.php:292
 msgid "Add outline to all links on focus mode."
-msgstr "הוספת אפקט על קישורים שנמצאים במצב פוקוס."
+msgstr "הוספת אפקט על קישורים שנמצאים במצב פוקוס"
 
-#: inc/acp_panel.php:286
+#: inc/acp_panel.php:296
 msgid "Force underline for links."
-msgstr "הוספת קו תחתון לכל הקישורים."
+msgstr "הוספת קו תחתון לכל הקישורים"
 
-#: inc/acp_panel.php:291
+#: inc/acp_panel.php:301
 msgid "Images"
 msgstr "תמונות"
 
-#: inc/acp_panel.php:295
+#: inc/acp_panel.php:305
 msgid "Force using ALT on all images."
-msgstr "הוספת ALT לכל התמונות שאין להם תכונה זו."
+msgstr "הוספת ALT לכל התמונות שאין להם תכונה זו"
 
-#: inc/acp_panel.php:299
-msgid "Use attachment title as ALT for images with no alt."
-msgstr "השתמש בכותרת קובץ המדיה כ-ALT עבור תמונות שאין להן תכונה זו."
+#: inc/acp_panel.php:309
+msgid "Replacement for the image ALT"
+msgstr "תחלופת מלל עבור טקסט חלופי לתמונות שלא הוזן עבורן טקסט חלופי"
 
-#: inc/acp_skiplinks.php:16
+#: inc/acp_panel.php:312
+msgid "None"
+msgstr "ללא"
+
+#: inc/acp_panel.php:316
+msgid "Use attachment title as ALT for images with no alt"
+msgstr "השתמש בכותרת התמונה עבור טקסט חלופי לתמונות שאין להן טקסט חלופי"
+
+#: inc/acp_panel.php:320
+msgid "Use attachment description as ALT for images with no alt"
+msgstr "השתמש בתיאור התמונה עבור טקסט חלופי לתמונות שאין להן טקסט חלופי"
+
+#: inc/acp_skiplinks.php:11
 msgid "Homepage Skiplinks"
 msgstr "קישורי דילוג עבור דף הבית"
 
-#: inc/acp_toolbar.php:14
+#: inc/acp_toolbar.php:17
 msgid "Accessibility"
 msgstr "נגישות"
 
-#: inc/acp_toolbar.php:18
+#: inc/acp_toolbar.php:21
 msgid "Accessibility Toolbar"
 msgstr "כלי נגישות"
 
-#: inc/acp_toolbar.php:20
+#: inc/acp_toolbar.php:23
 msgid "Decrease font size"
 msgstr "הקטנת גודל הגופן"
 
-#: inc/acp_toolbar.php:21
+#: inc/acp_toolbar.php:24
 msgid "Increase font size"
 msgstr "הגדלת גודל הגופן"
 
-#: inc/acp_toolbar.php:22
+#: inc/acp_toolbar.php:25
 msgid "Default font sizes"
 msgstr "חזרה לגדלי גופן מקוריים"
 
-#: inc/acp_toolbar.php:25
+#: inc/acp_toolbar.php:28
 msgid "Bright contrast"
 msgstr "ניגודיות בהירה"
 
-#: inc/acp_toolbar.php:26
+#: inc/acp_toolbar.php:29
 msgid "Dark contrast"
 msgstr "ניגודיות כהה"
 
-#: inc/acp_toolbar.php:27
+#: inc/acp_toolbar.php:30
 msgid "Grayscale"
 msgstr "שחור-לבן"
 
-#: inc/acp_toolbar.php:28
+#: inc/acp_toolbar.php:31
 msgid "Reset contrast"
 msgstr "איפוס הניגודיות"
 
-#: inc/acp_toolbar.php:31
+#: inc/acp_toolbar.php:34
+msgid "Keyboard Navigation"
+msgstr "ניווט מקלדת"
+
+#: inc/acp_toolbar.php:37
 msgid "Toggle underline"
 msgstr "הוספת/הסרת קו תחתון לקישורים"

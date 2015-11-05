@@ -86,7 +86,7 @@ function acp_page_callback() {
 <div id="accessible-poetry" class="wrap">
 	<div class="acp-field">
 		<h1><?php _e('Welcome to Accessible Poetry!', 'acp');?></h1>
-		<div class="plugin-version"><span><?php _e('Version', 'acp');?>: 1.2.2</span></div>
+		<div class="plugin-version"><span><?php _e('Version', 'acp');?>: 1.2.3</span></div>
 		<p><?php _e('Here you will find options to perform a better accessibility WordPress website.', 'acp');?></p>
 		<p><?php _e('This plugin is provided by', 'acp');?> <a href="http://www.Amitmoreno.com/"><?php _e('Amit Moreno', 'acp');?></a>. <?php _e('Please visit our', 'acp');?> <a href="https://wordpress.org/plugins/accessible-poetry/" role="link" aria-label="<?php _e('Go to our Plugin Page', 'acp');?>"><?php _e('Plugin Page', 'acp');?></a> <?php _e('and ', 'acp');?><a href="https://wordpress.org/support/view/plugin-reviews/accessible-poetry" role="link" aria-label="<?php _e('Rate Us on our Plugin Page', 'acp');?>"><?php _e('Rate Us', 'acp');?></a>.</p>
 	</div>
