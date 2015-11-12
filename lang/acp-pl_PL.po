@@ -366,3 +366,7 @@ msgstr "Nawigacja klawiatury"
 #: inc/acp_toolbar.php:37
 msgid "Toggle underline"
 msgstr "Przełącz podkreślenie"
+
+#
+msgid "Readable font"
+msgstr "Wyraźna czcionka"
